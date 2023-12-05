@@ -6,35 +6,53 @@
     <title>Document</title>
 </head>
 <script>
-    // alert("Hello World");
+    // mode terbuka
+        // alert("Hello world");
 
-    // console.log("Hello World");
+        // mode silent
+        console.log("Hello world again bro");
 
-    const phi = 3.14;
-    let r = 7;
+        // variabel, constant
+        const phi = 3.14;
+        let r = 7;
 
-    let klingkaran = 2*phi*r;
+        let K_lingkaran = 2 * phi * r;
+        console.log(K_lingkaran);
 
-    console.log(klingkaran);
+        // array
+        const nama = ["Miftah", "Reza", "Rudini", "Abi", "Maulid"];
+        nama[2] = "Rudi";
+        console.log(nama);
+        console.log(nama[2]);
 
-    const nama = ["Miftah", "Reza", "Rudini", "Abidin", "Maulid"]
-    console.log(nama[2])
-    nama[2] = "Rudi";
-    console.log(nama[2])
-    
-    // condition
+        // condition
+        const dt = new Date();
+        let tgl_sekarang = dt.getDate();
+        let bln_sekarang = dt.getMonth() + 1;
+        let thn_sekarang = dt.getFullYear();
 
-    const dt = new Date()
-    let tgl_sekarang = dt.getDate()
-    let bln_sekarang = dt.getMonth()
-    let thn_sekarang = dt.getFullYear()
+        console.log(bln_sekarang);
 
+        // jika tahun = 2023 dan bulan = 12 dan tanggal = 5 -> day1
+        // jika tahun = 2023 dan bulan = 12 dan tanggal = 6 -> day2
+        // jika tahun = 2023 dan bulan = 12 dan tanggal = 7 -> day3
 
-    console.log(tgl_sekarang)
-    console.log(bln_sekarang)
-    console.log(thn_sekarang)
+        if (thn_sekarang == 2023 && bln_sekarang == 12 && tgl_sekarang == 5) {
+            console.log("day1");
+        } else if (thn_sekarang == 2023 && bln_sekarang == 12 && tgl_sekarang == 6) {
+            console.log("day2");
+        } else if (thn_sekarang == 2023 && bln_sekarang == 12 && tgl_sekarang == 7) {
+            console.log("day3");
+        }
 
-    if ()
+        // looping
+        for (i = 0; i < nama.length; i++) {
+            console.log(nama[i]);
+        }
+
+        // pertukaran data -> ajax, fetch, axios
+
+        
 
 
 </script>
