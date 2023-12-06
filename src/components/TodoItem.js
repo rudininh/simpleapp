@@ -1,6 +1,6 @@
-const TodoItem = () => {
+const TodoItem = ({todo}) => {
     return ( 
-        <li>Hit the gym <span class="close">x</span></li>
+        <li>{todo.title} <span class="close">x</span></li>
     );
 }
  
