@@ -1,15 +1,59 @@
 {
-    "todos": [
-      {
-        "id": 1,
-        "title": "Hit the gyms",
-        "done": false
-      },
-      {
-        "title": "Pay bills",
-        "done": true,
-        "id": 2
-      }
-    ]
-  }
-  
+  "todos": [
+    {
+      "id": 1,
+      "title": "Hit the gyms",
+      "done": false
+    },
+    {
+      "title": "Pay bills",
+      "done": true,
+      "id": 2
+    },
+    {
+      "title": "13",
+      "done": false,
+      "id": 3
+    },
+    {
+      "title": "JANCOK",
+      "done": false,
+      "id": 4
+    },
+    {
+      "title": "KAWA DI INPUT",
+      "done": false,
+      "id": 5
+    },
+    {
+      "title": "persetan",
+      "done": false,
+      "id": 6
+    },
+    {
+      "title": "kata siapa",
+      "done": false,
+      "id": 7
+    },
+    {
+      "title": "MANTAP",
+      "done": false,
+      "id": 8
+    },
+    {
+      "title": "TES",
+      "done": false,
+      "id": 9
+    },
+    {
+      "title": "OWALA",
+      "done": false,
+      "id": 10
+    },
+    {
+      "title": "KATA SIAPA",
+      "done": false,
+      "id": 11
+    }
+  ]
+}
