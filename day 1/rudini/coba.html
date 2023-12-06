@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUCING</title>
+
+    <script>
+    
+    async function kucing() {
+        fetch('https://catfact.ninja/breeds?limit=3', {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+            },
+        })
+            .then(response => response.json())
+            .then(response => 
+            
+            console.log(jancok)
+            )
+
+    }
+
+    kucing()
+    </script>
+</head>
+<body>
+
+    <div class="konten">
+        <ul>
+            <li>Konten 1 </li>
+            <li>Konten 2</li>
+            <script>
+                console.log("tes")
+            </script>
+        </ul>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Latihan jquery</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="jquery.min.js"></script>
+
+</head>
+
+<script src="rumus.js"></script>
+<script>
+    $(document).ready(function(){
+        // pembacaan event
+
+        $("#jarijari").change(function(){
+            // keliling_lingkaran();
+            let r = document.getElementById("jarijari").value;
+            let K_lingkaran = keliling_lingkaran_2(r);
+            document.getElementById("keliling").value = K_lingkaran;
+        });
+    });
+
+</script>
+
+<body>
+    <div style="text-align: center;">
+        <h1>Rumus Keliling Lingkaran</h1>
+    </div>
+
+    <div style="text-align: center;">
+        <form>
+            <label>Masukkan jari-jari : </label>
+            <input type="number" id="jarijari"> <br> <br>
+
+            <!-- <input type="button" value="Hitung" onclick="keliling_lingkaran()"><br> <br> -->
+
+            <label>Hasilnya adalah : </label>
+            <input type="text" id="keliling">
+        </form>
+    </div>
+</body>
+
+</html>

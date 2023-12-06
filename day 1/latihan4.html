@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<script>
+    async function f() {
+        let promise = new Promise((rsv, reject) => {
+            setTimeout(() => reject("done!"), 5000)
+        });
+
+        let result = await promise; // wait until the promise resolves (*)
+
+        alert(result); // "done!"
+    }
+
+    f();
+
+</script>
+</html>

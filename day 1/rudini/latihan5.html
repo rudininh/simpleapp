@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<script>
+    async function f() {
+        console.log("hai");
+        fetch('https://catfact.ninja/facts')
+            .then(response => response.json())
+            .then(resp => {
+                const posts = resp.data;
+
+                var html = "";
+                for (idx in posts) {
+                    console.log(posts[idx].fact);
+                    html += "<li>" + posts[idx].fact + "</li>";
+                }
+                console.log(html);
+                document.getElementById("konten").innerHTML = html;
+
+            })
+            .catch(error => console.error(error));
+
+        // fetch("https://www.reddit.com/r/all/top.json?limit=10").then(response => {
+        //     console.log(typeof response);
+        //     let json = response.json();
+        //     const posts = json.data.children.map(child => child.data);
+
+        //     console.log(posts);
+
+
+        //     // fetch
+        //     // then -> fetch
+        // }).catch(error => {
+        //     console.log("error");
+        // });
+    }
+
+    f();
+
+</script>
+
+<body>
+    <div>
+        <ul id="konten">
+
+        </ul>
+    </div>
+</body>
+
+</html>

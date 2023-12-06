@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>Latihan 1</title>
+</head>
+
+<script>
+    /*
+    // mode terbuka
+    // alert("Hello world");
+
+    // mode silent
+    console.log("Hello world again bro");
+
+    // variabel, constant
+    const phi=3.14;
+    let r=7;
+
+    let K_lingkaran = 2*phi*r;
+    console.log(K_lingkaran);
+
+    // array
+    const nama = ["Miftah", "Reza", "Rudini","Abi","Maulid"];
+    nama[2] = "Rudi";
+    console.log(nama);
+    console.log(nama[2]);
+
+    // condition
+    const dt = new Date();
+    let tgl_sekarang = dt.getDate();
+    let bln_sekarang = dt.getMonth()+1;
+    let thn_sekarang = dt.getFullYear();
+    
+    console.log(bln_sekarang);
+
+    // jika tahun = 2023 dan bulan = 12 dan tanggal = 5 -> day1
+    // jika tahun = 2023 dan bulan = 12 dan tanggal = 6 -> day2
+    // jika tahun = 2023 dan bulan = 12 dan tanggal = 7 -> day3
+
+    if (thn_sekarang == 2023 && bln_sekarang == 12 && tgl_sekarang == 5){
+        console.log("day1");
+    }else if (thn_sekarang == 2023 && bln_sekarang == 12 && tgl_sekarang == 6) {
+        console.log("day2");
+    }else if (thn_sekarang == 2023 && bln_sekarang == 12 && tgl_sekarang == 7) {
+        console.log("day3");
+    }
+    
+    // looping
+    for (i = 0; i < nama.length; i++){
+        console.log(nama[i]);
+    }
+    */
+
+    function keliling_lingkaran(){
+        console.log("saya terpanggil");
+        const phi=3.14;
+
+        let r = document.getElementById("jarijari").value;
+        let K_lingkaran = 2*phi*r;
+        console.log(K_lingkaran);
+
+        document.getElementById("keliling").value = K_lingkaran;
+
+        // return K_lingkaran;
+    }
+
+
+    // pertukaran data -> ajax, fetch, axios
+
+</script>
+
+<body>
+    <div style="text-align: center;">
+        <h1>Rumus Keliling Lingkaran</h1>
+    </div>
+
+    <div style="text-align: center;">
+        <form>
+            <label>Masukkan jari-jari : </label>
+            <input type="number" id="jarijari" oninput="keliling_lingkaran()"> <br> <br>
+
+            <!-- <input type="button" value="Hitung" onclick="keliling_lingkaran()"><br> <br> -->
+
+            <label>Hasilnya adalah : </label>
+            <input type="text" id="keliling">
+        </form>
+    </div>
+    
+
+</body>
+
+</html>
