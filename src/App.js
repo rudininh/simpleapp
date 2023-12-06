@@ -1,9 +1,16 @@
 // import logo from './logo.svg';
 // import './App.css';
+import { useState } from 'react';
 import Header from './components/Header';
 import TodoList from './components/TodoList';
 
 function App() {
+  const [isRefresh, setIsRefresh] = useState(true)
+
+  const setRefresh = (status) => {
+    setIsRefresh(status)
+  }
+
   return (
     <div className="App">
       {/* <header className="App-header">
@@ -20,8 +27,8 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Header/>
-      <TodoList/>
+      <Header setRefresh={setRefresh} />
+      <TodoList setRefresh={setRefresh} isRefresh={isRefresh} />
       {/* <h1>Hello World!</h1> */}
     </div>
   );
