@@ -7,53 +7,38 @@
     },
     {
       "title": "Pay bills",
-      "done": true,
+      "done": false,
       "id": 2
     },
     {
-      "title": "13",
-      "done": false,
-      "id": 3
-    },
-    {
-      "title": "JANCOK",
+      "title": "SATU",
       "done": false,
       "id": 4
     },
     {
-      "title": "KAWA DI INPUT",
+      "title": "SATU",
       "done": false,
       "id": 5
     },
     {
-      "title": "persetan",
+      "title": "AKU",
       "done": false,
       "id": 6
     },
     {
-      "title": "kata siapa",
+      "title": "SAYANG",
       "done": false,
       "id": 7
     },
     {
-      "title": "MANTAP",
+      "title": "IBU",
       "done": false,
       "id": 8
     },
     {
-      "title": "TES",
+      "title": "DUA",
       "done": false,
       "id": 9
-    },
-    {
-      "title": "OWALA",
-      "done": false,
-      "id": 10
-    },
-    {
-      "title": "KATA SIAPA",
-      "done": false,
-      "id": 11
     }
   ]
 }
